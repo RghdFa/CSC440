@@ -1,0 +1,54 @@
+<html><head>
+      
+    <!-- The title shows up in the browser toolbar -->
+        <title>Ghaida page </title>
+        <link rel="stylesheet" type="text/css" href="style.css" >
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+        <!--===============================================================================================-->
+            <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+        <!--===============================================================================================-->
+            <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+        <!--===============================================================================================-->
+            <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+        <!--===============================================================================================-->
+            <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+        <!--===============================================================================================-->
+            <link rel="stylesheet" type="text/css" href="css/util.css">
+            <link rel="stylesheet" type="text/css" href="css/main.css">
+    </head>
+
+    <body>
+            <div class="bg-contact3" style="background-image: url('website_background/BackgroundGhiada.jpg');">
+                <div class="container-contact3">
+                    <div class="wrap-contact3">
+                           <!-- <span class="RaghadEdit" style="text-align:center"
+                             id="matches"></span>    
+                        <span class="RaghadEdit" id="result"></span> -->
+                        <span class="RaghadEdit" style="text-align:center"
+                        id="result" ></span>
+                        
+                        <script >
+                                 document.getElementById("result").innerHTML="Welcome "+localStorage.getItem("textvalue") +"\n ,You and Ghaida are matching "+
+                                    localStorage.getItem("percentage")+"%!";
+                          </script>
+                        <div class="wrap-input3 validate-input" style="text-align:center">
+                            <span class="RaghadEdit2"> Ghaida Also Interested in : </span><br>
+                                <span class="RaghadEdit2" id="interest1"></span> 
+                                <span class="RaghadEdit2" id="interest2"></span>
+                                <span class="RaghadEdit2" id="interest3"></span>
+                                <span class="RaghadEdit2" id="interest4"></span>
+                        </div>
+                        <script>
+                            document.getElementById("interest1").innerHTML=localStorage.getItem("Ghaida_music");
+                            document.getElementById("interest2").innerHTML=localStorage.getItem("Ghaida_paint");
+                            document.getElementById("interest3").innerHTML=localStorage.getItem("Ghaida_movie");
+                            document.getElementById("interest4").innerHTML=localStorage.getItem("Ghaida_dance");
+                        </script>  
+
+        <p><a href="GhaidaCV.html">do you want to see Ghaida's cv?</a></p>
+        </div>    
+    </div>
+ </div>
+
+    </body>
